@@ -1,0 +1,175 @@
+/* 主页css */
+    /* 内框需要开启滚动条开启下一句 */
+*{
+    margin:0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+    overflow: hidden; 
+}
+body{
+    font-family: Microsoft YaHei;
+    background-image: url("../img/background/2.jpg");
+}
+.top_one{
+    height: 15%;
+    width: 100%;
+    position: relative;
+} 
+.min_one{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.bottom_one{
+    height: 5%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+.min_two1{
+    height: 100%;
+    width: 5%;
+    position: relative;
+}
+.min_two2{
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+.min_two3{
+    height: 100%;
+    width: 5%;
+    position: relative;
+}
+.min_two1 ul{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #1867ce;
+    display: none;
+}
+.min_two1 ul li{
+    border-top: 1px rgba(44, 44, 44, 0.226) solid;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    list-style: none;
+}
+.min_two1 ul li a{
+    color: white;
+    text-decoration: none;
+}
+.min_two1 ul li:first-child{    
+    border-top: none;
+}
+.min_three1{
+    height: 100%;
+    width: 100%;
+    background-color: #2c2c2c;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.min_three2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.title_div{
+    position:relative;
+}
+.title_nav{
+    background-color: #2c2c2c;
+    height: 60px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+}
+.title_form{
+    margin-right: 20px;
+}
+.title{
+    height: 100%;
+    line-height: 60px;
+    font-size: 18px;
+    color: white;
+    margin: 30px;
+    position: relative;
+    height: 100%;
+}
+.title:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #1383e6;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    transition: all 0.5s;
+}
+.title:hover:after {
+    left: 0%;
+    width: 100%;
+}
+.title:hover{
+    text-decoration: none;
+    color: #1383e6;
+}
+.label-pill{
+    margin-left: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    background-color: #037be4;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+.label-default{
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    color: #0275d8;
+    background-color: #fff;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+#Search_kind{
+    width: 90px;
+}
+/* 点击波浪效果 */
+.ripple1 {
+    position: absolute;
+    background: rgba(0, 0, 0, .15);
+    border-radius: 50%;
+    transform: scale(0);
+    pointer-events: none;
+}
+.show1 {
+    animation: ripple1 .75s ease-out;
+}
+@keyframes ripple1 {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

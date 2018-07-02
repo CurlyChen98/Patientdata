@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css、js引用 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- css、js引用结束-->
+    <link rel="stylesheet" href="css/outside.css">
+    <script src="js/outside.js"></script>
+    <script src="js/my_all.js"></script>
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            showtable();
+            useid$("left_page").addEventListener('click', function () {
+                page = parseInt(page);
+                if(page==1){
+                    alert("Already the first page");
+                    return;
+                }
+                page = page - 1;
+                var cookie_page = "page=" + page;
+                document.cookie = cookie_page;
+                showtable();
+            })
+            useid$("right_page").addEventListener('click', function () {
+                page = parseInt(page);
+                if(page==countnum){
+                    alert("Already the last page");
+                    return;
+                }
+                page = page + 1;
+                var cookie_page = "page=" + page;
+                document.cookie = cookie_page;
+                showtable();
+            })
+        }
+    </script>
+</head>
+<body>
+    <table id="table_show" onselectstart="return false;">
+        <thead id="table_show_thead">
+            <tr>
+                <th style="width: 10%;">Name</th>
+                <th style="width: 5%;">Age</th>
+                <th style="width: 10%;">住院号/门诊号</th>
+                <th style="width: 30%;">初步诊断</th>
+                <th style="width: 30%;">最后诊断</th>
+                <th style="width: 15%;">录入时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th style="width: 10%; height: 10px;"></th>
+                <th style="width: 5%; height: 10px;"></th>
+                <th style="width: 10%; height: 10px;"></th>
+                <th style="width: 30%; height: 10px;"></th>
+                <th style="width: 30%; height: 10px;"></th>
+                <th style="width: 15%; height: 10px;"></th>
+            </tr>
+        </tbody>
+        <tbody id="table_show_tbody">
+        </tbody>
+    </table>
+    <div id="div_page">
+        <div id="left_page"></div>
+        <div id="min_page"></div>
+        <div id="right_page"></div>
+    </div>
+</body>
+</html>

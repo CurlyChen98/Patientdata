@@ -1,0 +1,148 @@
+/* outside.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Microsoft YaHei;
+    background-color: unset;
+    color:white;
+    padding: 20px;
+    padding-top: 0px;
+}
+input[type="checkbox"]{
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+textarea{
+    width: 400px;
+    height: 120px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border:none;
+}
+input[type="text"]{
+    margin-left: 5px;
+    font-weight: bold;
+}
+/* input:-moz-placeholder
+input::-moz-placeholder
+input:-ms-input-placeholder */
+input::-webkit-input-placeholder{
+    font-weight: normal;    
+}
+input[type="checkbox"]+label{
+    cursor: pointer;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(190, 190, 190, 0.103);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 5px;
+    transition:0.3s; 
+}
+input[type="checkbox"]:checked+label{
+    background-color: rgb(32, 134, 250);
+    transition:0.3s; 
+}
+.auto_text{
+    width: 280px;
+    height: 30px;
+}
+.auto_span{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+}
+.tag_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.div-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+#six_six_table{
+    margin-left: 50px;
+    width: 1400px;
+    text-align: center;
+}
+#six_six_table th{
+    height: 40px;
+    font-weight: inherit;
+}
+.text_long{
+    width: 400px;
+}
+#six_eleven_table{
+    margin-left: 20px;
+    width: 400px;
+}
+#six_eleven_table th{
+    height: 35px;
+    font-weight: inherit;
+}
+#show_patient_data{
+    position: fixed;
+    height: 400px;
+    width: 350px;
+    background-color: #007bff;
+    border-radius: 10px;
+    right: 20px;
+    top: 20px;
+}
+.div_button{
+    position: fixed;
+    top: 430px;
+    right: 20px;
+    height: 140px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#patient_data_table{
+    margin: 20px;
+    width: 330px;
+}
+#patient_data_table th{
+    height: 45px;
+    font-family: Microsoft YaHei;
+    font-weight: inherit;
+    font-size: 18px;
+}
+.small_text{
+    height: 30px;
+    width: 170px;
+}
+/*- scrollbar -*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #6c757d;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track-piece{
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}

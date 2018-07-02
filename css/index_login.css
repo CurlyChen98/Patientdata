@@ -1,0 +1,23 @@
+/* index.css */
+body{
+    font-family: Microsoft YaHei;
+    background-color: unset
+}
+input[type=text]{
+    height: 40px;
+    width: 300px;
+}
+.mid_three{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 200px;
+    width: 300px;
+    color: azure;
+}
+.btn-primary{
+    background-color: unset;
+}

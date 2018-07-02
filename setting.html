@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css、js引用 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- css、js引用结束-->
+    <script src="js/setting.js"></script>
+    <script src="js/my_all.js"></script>
+    <link rel="stylesheet" href="css/setting.css">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            load_backgournd_img();
+            load_table();
+            setfun();
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 左边框 -->
+    <div class="setting_left">
+        <!-- 左边第一个设置框 -->
+        <div class="setting setting_one">
+            <span class="span">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Change</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu1" id="dropdownMenu1_menu"><a class="dropdown-item">密码</a><a class="dropdown-item">用户名</a>
+                </div>
+                &nbsp修改用户名或密码
+            </span>
+            <div style="width: 400px;margin-top: 10px;">
+                <input type="text" class="form-control" placeholder="Text" id="text_one">
+            </div>
+            <button type="submit" class="btn btn-primary button_submit" onclick="update_use()">Submit</button>
+        </div>
+        <!-- 左边第二个设置框 -->
+        <div class="setting setting_thr">
+            <!-- 伪input:file控件 -->
+            <span class="span">
+                <button id="button_thr_file" type="file" class="btn btn-success">File</button>&nbsp选择sql文件
+            </span>
+            <!-- 真input:file控件被隐藏 -->
+            <input type="file" style="display: none;" id="thr_changefile" onchange="file_change(3)">
+            <div style="width: 400px;margin-top: 10px;">
+                <input type="text" class="form-control" placeholder="Text" id="text_thr">
+            </div>
+            <button type="submit" class="btn btn-primary button_submit" onclick="up_file(3)">Submit</button>            
+        </div>
+        <!-- 左边第三个设置框 -->
+        <div class="setting setting_five">
+            <span class="span">
+                <button class="btn btn btn-warning dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Select</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu3" id="dropdownMenu3_menu"></div>
+                &nbsp删除数据表
+            </span>
+            <button type="submit" class="btn btn-primary button_submit" onclick="drop_table()">Submit</button>
+        </div>
+    </div>
+    <!-- 右边框 -->
+    <div class="setting_right">
+        <!-- 右边第一个设置框 -->
+        <div class="setting setting_two">
+            <!-- 伪input:file控件 -->
+            <span class="span">
+                <button id="button_tow_file" type="file" class="btn btn-success">File</button>&nbsp选择上传的文件
+            </span>
+            <!-- 真input:file控件被隐藏 -->
+            <input type="file" style="display: none;" id="two_changefile" onchange="file_change(2)">
+            <div style="width: 400px;margin-top: 10px;">
+                <input type="text" class="form-control" placeholder="Text" id="text_two">
+            </div>
+            <img id="two_backgournd_img" height="250px" style="margin-top: 10px;" />
+            <button type="submit" class="btn btn-primary button_submit" onclick="up_file(2)">Submit</button>
+        </div>
+        <!-- 右边第二个设置框 -->
+        <div class="setting setting_four">
+            <span class="span">
+                <button class="btn btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Select</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="dropdownMenu2_menu"></div>
+                &nbsp修改页面背景
+            </span>
+            <img id="four_backgournd_img" height="250px" style="margin-top: 10px;" />    
+            <button type="button" class="btn btn-danger button_four" onclick="update_backgournd('delete')">Delete</button>
+            <button type="submit" class="btn btn-primary button_submit" onclick="update_backgournd('update')">Submit</button>
+        </div>
+    </div>
+    <!-- <div style="width: 100%;background-color: #ffffff">big</div> -->
+</body>
+
+</html>

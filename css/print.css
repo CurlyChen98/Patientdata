@@ -1,0 +1,83 @@
+/* print.css */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 296mm;
+    width: 210mm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+    border:1px solid black;
+    box-sizing: border-box;
+}
+#all{
+    font-family:  Microsoft YaHei;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.box{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.messgae{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 25%;
+    font-weight: 500;
+    font-size: 18px;
+}
+.box_show{
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.kind_one{
+    margin-bottom: 45px;
+}
+.head{
+    font-weight: bold;
+    width: 160px;
+}
+.second_span{
+    width: 195px;
+}
+.show_table{
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+.show_table span{
+    width: 80px;
+}
+.hot_cold{
+    flex-direction: column;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+/* （冷热试验:）的表格css */
+.hot-cold-table{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border:black 1px solid;
+    border-width: thin;
+}
+.hot-cold-table th{
+    height: 50px;
+    font-family: inherit;
+    font-weight: inherit;
+}
+/* （印象：提示）的表格css */
+.tip-table th{
+    text-align: left;
+    font-family: inherit;
+    font-weight: inherit;
+    height: 26px;
+}

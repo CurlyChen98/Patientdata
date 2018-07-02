@@ -1,0 +1,131 @@
+/* inside.css */
+body{
+    font-family: Microsoft YaHei;
+    background-color: unset;
+    color:white;
+    margin-top: 20px;
+}
+.div_input_text{
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.input_text_sex{
+    margin-left: 20px;
+    margin-top: 32px;
+}
+.input_text_div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+input[type="checkbox"]{
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+textarea{
+    width: 400px;
+    height: 120px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border:none;
+}
+input[type="text"]{
+    margin-left: 5px;
+}
+input[type="checkbox"]+label{
+    cursor: pointer;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(190, 190, 190, 0.103);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 5px;
+    transition:0.3s; 
+}
+input[type="checkbox"]:checked+label{
+    background-color: rgb(32, 134, 250);
+    transition:0.3s; 
+}
+.auto_inside{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.div-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.auto_text{
+    width: 280px;
+    height: 30px;
+}
+.auto_span{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+}
+.text_long{
+    width: 400px;
+}
+.tag_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#six_six_table{
+    margin-left: 10px;
+    width: 1400px;
+    text-align: center;
+}
+#six_six_table th{
+    height: 40px;
+    font-weight: inherit;
+}
+#six_eleven_table{
+    margin-left: 20px;
+    width: 400px;
+}
+#six_eleven_table th{
+    height: 35px;
+    font-weight: inherit;
+}
+.div_submit{
+    width: 200px;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+/*- scrollbar -*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #6c757d;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track-piece{
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}
